@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="css/console.css" rel="stylesheet" type="text/css" media="all">
     <script type="text/javascript" src="build/nes.js"></script>
     <script type="text/javascript">
       var nes;
@@ -288,13 +289,55 @@
       <button id="loadROMButton" onclick="loadRom()">load rom</button><br />
       Select rom from the list or drag and drop your own rom into this window to start.
     </p>
-
+  <input type="checkbox" id="screen" name="screen">
+<main class="nintendo-switch">
+  
+  <aside class="actions left">
+    <i class="minus">-</i>
+    <div class="analogic">
+      <div class="center-circle"></div>
+    </div>
+    <div class="buttons">
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+    </div>
+    <div class="square"></div>
+  </aside>
+  <label class="middle" for="screen">
+    <div class="screen">
+      <div class="glass"></div>
+      <span>Click here to0 <br>
+        <strong>Animate</strong>
+           </span>
     <p>
       <canvas id="mainCanvas" width="256" height="240"
               style="border:1px solid black; width:512px; height:480px;"></canvas>
       <span id="fps"></span> fps
     </p>
+ </div>   
+  </label>
+  
+  <aside class="actions right">
+    <i class="plus">+</i>
+    <div class="analogic">
+      <div class="center-circle"></div>
+    </div>
+    <div class="buttons">
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+    </div>
+    <div class="circle"></div>
+  </aside>
+  
+</main>
+  </body>
+</html>
 
+        
     <div>
       <table>
         <tr>
